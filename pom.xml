@@ -22,4 +22,22 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+      <defaultGoal>package</defaultGoal>
+      <plugins>
+          <plugin>
+              <artifactId>maven-jar-plugin</artifactId>
+              <groupId>org.apache.maven.plugins</groupId>
+              <configuration>
+                  <archive>
+                      <manifest>
+                          <addClasspath>true</addClasspath>
+                          <mainClass>org.fastpace.App</mainClass>
+                      </manifest>
+                  </archive>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
 </project>

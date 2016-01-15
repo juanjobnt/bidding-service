@@ -15,7 +15,7 @@ import java.util.Vector;
 import com.sun.net.httpserver.HttpServer;
 
 /**
- * Hello world!
+ * Bid app
  *
  */
 public class App {
@@ -86,7 +86,7 @@ public class App {
 	}
 
 	public static void main(String[] args) throws Exception {
-		System.out.println("Hello World!");
+		System.out.println("Server started");
 		App app = new App(8080);
 		app.start();
 	}
